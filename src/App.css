@@ -1,0 +1,74 @@
+.App { 
+
+  background: linear-gradient(to bottom, #c99403,#3f94bb, #0a1424);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+
+  background: linear-gradient(to bottom, #1e56aa,#3f94bb);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.flex{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap:10px;
+}
+
+input[type="text"] {
+  
+  height: 50px;
+  border: none;
+  font-size: 2rem;
+  text-align: right;
+  border-radius: 5px;
+
+  padding: 0.5rem ;
+  margin-bottom: 0.5rem;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.clear {
+  background-color: #f44336;
+  color: white;
+}
+
+.backspace {
+  background-color: #e91e63;
+  color: white;
+}
+
+.result {
+  background-color: #4caf50;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  transform: translateY(2px);
+} 
+
